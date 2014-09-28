@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D2D63C19D8957600201C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D63B19D8957600201C2C /* AppDelegate.swift */; };
+		02D2D63F19D8957600201C2C /* PhotoSwapr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D63D19D8957600201C2C /* PhotoSwapr.xcdatamodeld */; };
+		02D2D64119D8957600201C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D64019D8957600201C2C /* ViewController.swift */; };
+		02D2D64419D8957600201C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D64219D8957600201C2C /* Main.storyboard */; };
+		02D2D64619D8957600201C2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D64519D8957600201C2C /* Images.xcassets */; };
+		02D2D64919D8957600201C2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D64719D8957600201C2C /* LaunchScreen.xib */; };
+		02D2D65519D8957600201C2C /* PhotoSwaprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D65419D8957600201C2C /* PhotoSwaprTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02D2D64F19D8957600201C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D2D62E19D8957500201C2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D2D63519D8957600201C2C;
+			remoteInfo = PhotoSwapr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D2D63619D8957600201C2C /* PhotoSwapr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSwapr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D2D63A19D8957600201C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D2D63B19D8957600201C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02D2D63E19D8957600201C2C /* PhotoSwapr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoSwapr.xcdatamodel; sourceTree = "<group>"; };
+		02D2D64019D8957600201C2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02D2D64319D8957600201C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02D2D64519D8957600201C2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02D2D64819D8957600201C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02D2D64E19D8957600201C2C /* PhotoSwaprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSwaprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D2D65319D8957600201C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D2D65419D8957600201C2C /* PhotoSwaprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwaprTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D2D63319D8957600201C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D2D64B19D8957600201C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D2D62D19D8957500201C2C = {
+			isa = PBXGroup;
+			children = (
+				02D2D63819D8957600201C2C /* PhotoSwapr */,
+				02D2D65119D8957600201C2C /* PhotoSwaprTests */,
+				02D2D63719D8957600201C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02D2D63719D8957600201C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02D2D63619D8957600201C2C /* PhotoSwapr.app */,
+				02D2D64E19D8957600201C2C /* PhotoSwaprTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02D2D63819D8957600201C2C /* PhotoSwapr */ = {
+			isa = PBXGroup;
+			children = (
+				02D2D63B19D8957600201C2C /* AppDelegate.swift */,
+				02D2D64019D8957600201C2C /* ViewController.swift */,
+				02D2D64219D8957600201C2C /* Main.storyboard */,
+				02D2D64519D8957600201C2C /* Images.xcassets */,
+				02D2D64719D8957600201C2C /* LaunchScreen.xib */,
+				02D2D63D19D8957600201C2C /* PhotoSwapr.xcdatamodeld */,
+				02D2D63919D8957600201C2C /* Supporting Files */,
+			);
+			path = PhotoSwapr;
+			sourceTree = "<group>";
+		};
+		02D2D63919D8957600201C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D2D63A19D8957600201C2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02D2D65119D8957600201C2C /* PhotoSwaprTests */ = {
+			isa = PBXGroup;
+			children = (
+				02D2D65419D8957600201C2C /* PhotoSwaprTests.swift */,
+				02D2D65219D8957600201C2C /* Supporting Files */,
+			);
+			path = PhotoSwaprTests;
+			sourceTree = "<group>";
+		};
+		02D2D65219D8957600201C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D2D65319D8957600201C2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02D2D63519D8957600201C2C /* PhotoSwapr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D2D65819D8957600201C2C /* Build configuration list for PBXNativeTarget "PhotoSwapr" */;
+			buildPhases = (
+				02D2D63219D8957600201C2C /* Sources */,
+				02D2D63319D8957600201C2C /* Frameworks */,
+				02D2D63419D8957600201C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoSwapr;
+			productName = PhotoSwapr;
+			productReference = 02D2D63619D8957600201C2C /* PhotoSwapr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02D2D64D19D8957600201C2C /* PhotoSwaprTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D2D65B19D8957600201C2C /* Build configuration list for PBXNativeTarget "PhotoSwaprTests" */;
+			buildPhases = (
+				02D2D64A19D8957600201C2C /* Sources */,
+				02D2D64B19D8957600201C2C /* Frameworks */,
+				02D2D64C19D8957600201C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02D2D65019D8957600201C2C /* PBXTargetDependency */,
+			);
+			name = PhotoSwaprTests;
+			productName = PhotoSwaprTests;
+			productReference = 02D2D64E19D8957600201C2C /* PhotoSwaprTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02D2D62E19D8957500201C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "JQ Software LLC";
+				TargetAttributes = {
+					02D2D63519D8957600201C2C = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					02D2D64D19D8957600201C2C = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 02D2D63519D8957600201C2C;
+					};
+				};
+			};
+			buildConfigurationList = 02D2D63119D8957500201C2C /* Build configuration list for PBXProject "PhotoSwapr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02D2D62D19D8957500201C2C;
+			productRefGroup = 02D2D63719D8957600201C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02D2D63519D8957600201C2C /* PhotoSwapr */,
+				02D2D64D19D8957600201C2C /* PhotoSwaprTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02D2D63419D8957600201C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D2D64419D8957600201C2C /* Main.storyboard in Resources */,
+				02D2D64919D8957600201C2C /* LaunchScreen.xib in Resources */,
+				02D2D64619D8957600201C2C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D2D64C19D8957600201C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02D2D63219D8957600201C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D2D64119D8957600201C2C /* ViewController.swift in Sources */,
+				02D2D63F19D8957600201C2C /* PhotoSwapr.xcdatamodeld in Sources */,
+				02D2D63C19D8957600201C2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D2D64A19D8957600201C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D2D65519D8957600201C2C /* PhotoSwaprTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02D2D65019D8957600201C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D2D63519D8957600201C2C /* PhotoSwapr */;
+			targetProxy = 02D2D64F19D8957600201C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02D2D64219D8957600201C2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02D2D64319D8957600201C2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02D2D64719D8957600201C2C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02D2D64819D8957600201C2C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02D2D65619D8957600201C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02D2D65719D8957600201C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02D2D65919D8957600201C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoSwapr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02D2D65A19D8957600201C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoSwapr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02D2D65C19D8957600201C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoSwaprTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoSwapr.app/PhotoSwapr";
+			};
+			name = Debug;
+		};
+		02D2D65D19D8957600201C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoSwaprTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoSwapr.app/PhotoSwapr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02D2D63119D8957500201C2C /* Build configuration list for PBXProject "PhotoSwapr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D2D65619D8957600201C2C /* Debug */,
+				02D2D65719D8957600201C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D2D65819D8957600201C2C /* Build configuration list for PBXNativeTarget "PhotoSwapr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D2D65919D8957600201C2C /* Debug */,
+				02D2D65A19D8957600201C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02D2D65B19D8957600201C2C /* Build configuration list for PBXNativeTarget "PhotoSwaprTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D2D65C19D8957600201C2C /* Debug */,
+				02D2D65D19D8957600201C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02D2D63D19D8957600201C2C /* PhotoSwapr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02D2D63E19D8957600201C2C /* PhotoSwapr.xcdatamodel */,
+			);
+			currentVersion = 02D2D63E19D8957600201C2C /* PhotoSwapr.xcdatamodel */;
+			path = PhotoSwapr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02D2D62E19D8957500201C2C /* Project object */;
+}
