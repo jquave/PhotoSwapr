@@ -28,10 +28,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
+        let cell = tableView.dequeueReusableCellWithIdentifier("ImageTableViewCell") as ImageTableViewCell
         
-        cell.textLabel?.text = "Row #\(indexPath.row)"
-        cell.detailTextLabel?.text = "Subtitle #\(indexPath.row)"
+      //  cell.textLabel?.text = "Row #\(indexPath.row)"
+      //  cell.detailTextLabel?.text = "Subtitle #\(indexPath.row)"
         
         return cell
     }

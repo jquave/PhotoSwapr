@@ -14,6 +14,9 @@
 		02D2D64619D8957600201C2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D64519D8957600201C2C /* Images.xcassets */; };
 		02D2D64919D8957600201C2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D64719D8957600201C2C /* LaunchScreen.xib */; };
 		02D2D65519D8957600201C2C /* PhotoSwaprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D65419D8957600201C2C /* PhotoSwaprTests.swift */; };
+		02D2D65F19DB5C1000201C2C /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D65E19DB5C1000201C2C /* ImageTableViewCell.swift */; };
+		02D2D66119DB5F8800201C2C /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D2D66019DB5F8800201C2C /* testImage.png */; };
+		02D2D66319DB689900201C2C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D66219DB689900201C2C /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		02D2D64E19D8957600201C2C /* PhotoSwaprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSwaprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2D65319D8957600201C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D2D65419D8957600201C2C /* PhotoSwaprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwaprTests.swift; sourceTree = "<group>"; };
+		02D2D65E19DB5C1000201C2C /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageTableViewCell.swift; path = Views/ImageTableViewCell.swift; sourceTree = "<group>"; };
+		02D2D66019DB5F8800201C2C /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
+		02D2D66219DB689900201C2C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Views/CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		02D2D63819D8957600201C2C /* PhotoSwapr */ = {
 			isa = PBXGroup;
 			children = (
+				02D2D66019DB5F8800201C2C /* testImage.png */,
 				02D2D63B19D8957600201C2C /* AppDelegate.swift */,
 				02D2D64019D8957600201C2C /* ViewController.swift */,
 				02D2D64219D8957600201C2C /* Main.storyboard */,
@@ -86,6 +93,8 @@
 				02D2D64719D8957600201C2C /* LaunchScreen.xib */,
 				02D2D63D19D8957600201C2C /* PhotoSwapr.xcdatamodeld */,
 				02D2D63919D8957600201C2C /* Supporting Files */,
+				02D2D65E19DB5C1000201C2C /* ImageTableViewCell.swift */,
+				02D2D66219DB689900201C2C /* CameraViewController.swift */,
 			);
 			path = PhotoSwapr;
 			sourceTree = "<group>";
@@ -198,6 +207,7 @@
 				02D2D64419D8957600201C2C /* Main.storyboard in Resources */,
 				02D2D64919D8957600201C2C /* LaunchScreen.xib in Resources */,
 				02D2D64619D8957600201C2C /* Images.xcassets in Resources */,
+				02D2D66119DB5F8800201C2C /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D2D64119D8957600201C2C /* ViewController.swift in Sources */,
+				02D2D66319DB689900201C2C /* CameraViewController.swift in Sources */,
+				02D2D65F19DB5C1000201C2C /* ImageTableViewCell.swift in Sources */,
 				02D2D63F19D8957600201C2C /* PhotoSwapr.xcdatamodeld in Sources */,
 				02D2D63C19D8957600201C2C /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +421,7 @@
 				02D2D65A19D8957600201C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02D2D65B19D8957600201C2C /* Build configuration list for PBXNativeTarget "PhotoSwaprTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				02D2D65D19D8957600201C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

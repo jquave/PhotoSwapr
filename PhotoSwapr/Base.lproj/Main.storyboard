@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--PhotoSwapr-->
+        <!--Feed-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PhotoSwapr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feed" id="vXZ-lx-hvc" customClass="ViewController" customModule="PhotoSwapr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -29,14 +29,22 @@
                                 <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="445" y="343" width="139" height="49"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="jNe-CB-Y4j" kind="show" identifier="OpenCameraSegue" id="dcK-26-YQW"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zTJ-rO-SgW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zTJ-rO-SgW">
                                 <rect key="frame" x="0.0" y="64" width="600" height="471"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Yyq-ba-73n">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageTableViewCell" rowHeight="130" id="3lV-xE-5nh" customClass="ImageTableViewCell" customModule="PhotoSwapr" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yyq-ba-73n" id="EUk-lG-cec">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3lV-xE-5nh" id="Nsh-rO-sWW">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="qGn-0u-wor">
+                                                    <rect key="frame" x="8" y="10" width="113" height="113"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,7 +91,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="438"/>
+            <point key="canvasLocation" x="848" y="435"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="mGX-u0-Ac7">
+            <objects>
+                <viewController title="Camera" id="jNe-CB-Y4j" customClass="CameraViewController" customModule="PhotoSwapr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RHd-Hk-mfy"/>
+                        <viewControllerLayoutGuide type="bottom" id="zM2-8V-8G3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRh-vH-N9l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AE7-M7-HRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S7b-UP-6gM">
@@ -104,4 +131,7 @@
             <point key="canvasLocation" x="142" y="439"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="testImage.png" width="113" height="113"/>
+    </resources>
 </document>
