@@ -11,9 +11,12 @@ import UIKit
 class PhotoPreviewViewController: UIViewController {
     var photo : UIImage?
 
+    @IBOutlet weak var photoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         assert(photo != nil, "The 'photo' variable is nil in PhotoPreviewViewController. How are we going to preview a photo if it's nil!?")
+        photoImageView.image = photo
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +24,13 @@ class PhotoPreviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func share(sender: AnyObject) {
+        println("Pressed Share!")
+    }
 
     /*
     // MARK: - Navigation
