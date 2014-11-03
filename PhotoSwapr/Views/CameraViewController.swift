@@ -65,19 +65,23 @@ class CameraViewController: UIViewController {
                 capturedImageOutput.captureStillImageAsynchronouslyFromConnection(captureConnection, completionHandler: { (imageSampleBuffer, error) -> Void in
                     // Convert the sample buffer in to a jpeg representation in the form of an NSData
                     // This is suitable for writing to disk
-                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
-                    if let img = UIImage(data: imageData) {
-                        self.didTakePicture(img)
+                    if imageSampleBuffer != nil {
+                        var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
+                        if let img = UIImage(data: imageData) {
+                            self.didTakePicture(img)
+                        }
                     }
+                    self.captureSession.removeOutput(capturedImageOutput)
                 })
             }
         }
     }
     
+    
     func didTakePicture(img : UIImage) {
-        var previewVC = UIViewController(nibName: nil, bundle: nil)
-        previewVC.view = UIImageView(image: img)
-        self.presentViewController(previewVC, animated: true, completion: nil)
+        var photoPreviewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoPreview") as PhotoPreviewViewController
+        photoPreviewController.photo = img
+        self.presentViewController(photoPreviewController, animated: true, completion: nil)
     }
     
     func beginSession() {

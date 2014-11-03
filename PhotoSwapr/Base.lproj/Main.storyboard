@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="1513" y="439"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Preview View Controller-->
         <scene sceneID="fLW-6t-7ct">
             <objects>
-                <viewController id="jnM-cN-TlB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoPreview" id="jnM-cN-TlB" customClass="PhotoPreviewViewController" customModule="PhotoSwapr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xnR-Nh-Xez"/>
                         <viewControllerLayoutGuide type="bottom" id="vv6-Jz-2DV"/>
@@ -123,12 +123,48 @@
                     <view key="view" contentMode="scaleToFill" id="nt0-cU-1Lh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-9h-uax">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="491"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MH1-zB-4GF">
+                                <rect key="frame" x="16" y="550" width="120" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OQ-Hh-qq7">
+                                <rect key="frame" x="464" y="550" width="120" height="30"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Photo Caption" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-oU-BSd">
+                                <rect key="frame" x="16" y="499" width="575" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MH1-zB-4GF" firstAttribute="leading" secondItem="nt0-cU-1Lh" secondAttribute="leadingMargin" id="4sa-47-Ppk"/>
+                            <constraint firstItem="vv6-Jz-2DV" firstAttribute="top" secondItem="6OQ-Hh-qq7" secondAttribute="bottom" constant="20" id="5Ny-YJ-Zh1"/>
+                            <constraint firstItem="6OQ-Hh-qq7" firstAttribute="top" secondItem="ouW-oU-BSd" secondAttribute="bottom" constant="21" id="II9-ae-AA5"/>
+                            <constraint firstItem="vv6-Jz-2DV" firstAttribute="top" secondItem="MH1-zB-4GF" secondAttribute="bottom" constant="20" id="PMY-9C-9HE"/>
+                            <constraint firstItem="MH1-zB-4GF" firstAttribute="top" secondItem="ouW-oU-BSd" secondAttribute="bottom" constant="21" id="S4b-Z2-W8m"/>
+                            <constraint firstItem="Z1W-9h-uax" firstAttribute="top" secondItem="nt0-cU-1Lh" secondAttribute="top" id="TpH-hx-K9J"/>
+                            <constraint firstItem="ouW-oU-BSd" firstAttribute="leading" secondItem="nt0-cU-1Lh" secondAttribute="leadingMargin" id="Vv5-Di-RFA"/>
+                            <constraint firstItem="Z1W-9h-uax" firstAttribute="leading" secondItem="nt0-cU-1Lh" secondAttribute="leading" id="dtQ-mt-fso"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ouW-oU-BSd" secondAttribute="trailing" constant="-7" id="ikB-Ry-Ra7"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1W-9h-uax" secondAttribute="trailing" id="oir-DO-zTq"/>
+                            <constraint firstItem="6OQ-Hh-qq7" firstAttribute="trailing" secondItem="nt0-cU-1Lh" secondAttribute="trailingMargin" id="tnV-jz-rkl"/>
+                            <constraint firstItem="ouW-oU-BSd" firstAttribute="top" secondItem="Z1W-9h-uax" secondAttribute="bottom" constant="8" id="v6n-F7-R8o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jbu-z0-PXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142" y="439"/>
+            <point key="canvasLocation" x="2162" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S7b-UP-6gM">

@@ -9,11 +9,11 @@
 import UIKit
 
 class PhotoPreviewViewController: UIViewController {
+    var photo : UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        assert(photo != nil, "The 'photo' variable is nil in PhotoPreviewViewController. How are we going to preview a photo if it's nil!?")
     }
 
     override func didReceiveMemoryWarning() {
