@@ -45,8 +45,39 @@ class CameraViewController: UIViewController {
         }
         
         tapGesture = UITapGestureRecognizer(target: self, action: "didTap:")
+        if let gesture = tapGesture {
+            self.view.addGestureRecognizer(gesture)
+        }
         
-        
+    }
+    
+    func didTap(gesture : UITapGestureRecognizer) {
+        // Capture a photo
+        if let device = captureDevice {
+            // Create a new instance of the AVCaptureStillImageOutput class
+            // in order to perform an AV capture on the camera device
+            var capturedImageOutput = AVCaptureStillImageOutput()
+            // Add the current session to the image output chain
+            captureSession.addOutput(capturedImageOutput)
+            // Grab the first available connection in the output chain
+            if let captureConnection = capturedImageOutput.connections[0] as? AVCaptureConnection {
+                // Capture the image to imageSamplebuffer
+                capturedImageOutput.captureStillImageAsynchronouslyFromConnection(captureConnection, completionHandler: { (imageSampleBuffer, error) -> Void in
+                    // Convert the sample buffer in to a jpeg representation in the form of an NSData
+                    // This is suitable for writing to disk
+                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
+                    if let img = UIImage(data: imageData) {
+                        self.didTakePicture(img)
+                    }
+                })
+            }
+        }
+    }
+    
+    func didTakePicture(img : UIImage) {
+        var previewVC = UIViewController(nibName: nil, bundle: nil)
+        previewVC.view = UIImageView(image: img)
+        self.presentViewController(previewVC, animated: true, completion: nil)
     }
     
     func beginSession() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02662A9E1A082BA8009719B2 /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02662A9D1A082BA8009719B2 /* PhotoPreviewViewController.swift */; };
 		02D2D63C19D8957600201C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D63B19D8957600201C2C /* AppDelegate.swift */; };
 		02D2D63F19D8957600201C2C /* PhotoSwapr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D63D19D8957600201C2C /* PhotoSwapr.xcdatamodeld */; };
 		02D2D64119D8957600201C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2D64019D8957600201C2C /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02662A9D1A082BA8009719B2 /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
 		02D2D63619D8957600201C2C /* PhotoSwapr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSwapr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2D63A19D8957600201C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D2D63B19D8957600201C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				02D2D63919D8957600201C2C /* Supporting Files */,
 				02D2D65E19DB5C1000201C2C /* ImageTableViewCell.swift */,
 				02D2D66219DB689900201C2C /* CameraViewController.swift */,
+				02662A9D1A082BA8009719B2 /* PhotoPreviewViewController.swift */,
 			);
 			path = PhotoSwapr;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02662A9E1A082BA8009719B2 /* PhotoPreviewViewController.swift in Sources */,
 				02D2D64119D8957600201C2C /* ViewController.swift in Sources */,
 				02D2D66319DB689900201C2C /* CameraViewController.swift in Sources */,
 				02D2D65F19DB5C1000201C2C /* ImageTableViewCell.swift in Sources */,
