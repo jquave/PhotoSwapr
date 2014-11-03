@@ -12,6 +12,7 @@ class PhotoPreviewViewController: UIViewController {
     var photo : UIImage?
 
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var captionTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
