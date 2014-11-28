@@ -10,6 +10,10 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController {
+    // Create a new instance of the AVCaptureStillImageOutput class
+    // in order to perform an AV capture on the camera device
+    var imageCaptureOutput = AVCaptureStillImageOutput()
+    
     // If we find a device we'll store it here for later use
     var captureDevice : AVCaptureDevice?
     let captureSession = AVCaptureSession()
@@ -54,15 +58,10 @@ class CameraViewController: UIViewController {
     func didTap(gesture : UITapGestureRecognizer) {
         // Capture a photo
         if let device = captureDevice {
-            // Create a new instance of the AVCaptureStillImageOutput class
-            // in order to perform an AV capture on the camera device
-            var capturedImageOutput = AVCaptureStillImageOutput()
-            // Add the current session to the image output chain
-            captureSession.addOutput(capturedImageOutput)
             // Grab the first available connection in the output chain
-            if let captureConnection = capturedImageOutput.connections[0] as? AVCaptureConnection {
+            if let captureConnection = imageCaptureOutput.connections[0] as? AVCaptureConnection {
                 // Capture the image to imageSamplebuffer
-                capturedImageOutput.captureStillImageAsynchronouslyFromConnection(captureConnection, completionHandler: { (imageSampleBuffer, error) -> Void in
+                imageCaptureOutput.captureStillImageAsynchronouslyFromConnection(captureConnection, completionHandler: { (imageSampleBuffer, error) -> Void in
                     // Convert the sample buffer in to a jpeg representation in the form of an NSData
                     // This is suitable for writing to disk
                     if imageSampleBuffer != nil {
@@ -71,7 +70,6 @@ class CameraViewController: UIViewController {
                             self.didTakePicture(img)
                         }
                     }
-                    self.captureSession.removeOutput(capturedImageOutput)
                 })
             }
         }
@@ -107,6 +105,9 @@ class CameraViewController: UIViewController {
         
         // Begin the session
         captureSession.startRunning()
+        
+        // Add the current session to the image output chain
+        captureSession.addOutput(imageCaptureOutput)
     }
     
     var targetFocus : Float = 0.0
