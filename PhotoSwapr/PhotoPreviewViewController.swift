@@ -9,10 +9,11 @@
 import UIKit
 
 class PhotoPreviewViewController: UIViewController {
-    var photo : UIImage?
-
+    
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var captionTextField: UITextField!
+    
+    var photo : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()

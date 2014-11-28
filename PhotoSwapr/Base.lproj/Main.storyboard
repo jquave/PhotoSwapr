@@ -169,7 +169,7 @@
                     </view>
                     <connections>
                         <outlet property="captionTextField" destination="ouW-oU-BSd" id="Pal-g0-LDL"/>
-                        <outlet property="photoImageView" destination="Z1W-9h-uax" id="nmh-Xx-gFD"/>
+                        <outlet property="photoImageView" destination="Z1W-9h-uax" id="l5T-cv-M84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jbu-z0-PXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
